@@ -1,0 +1,41 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+  <style>
+*{
+        font-family: Arial, Helvetica, serif;
+        font-size:20px;
+}
+
+header{
+width:100%;
+height:20%;
+background:#cfd6f0;
+}
+section{
+width:100%;
+height:80%;
+background:#00cf0f;
+}
+</style>
+</head>
+<header>
+<div>
+  <nav content="">
+    <ul class="nav-bar">
+      <li class="nav-link"><a href="/index">Index</a></li>
+      <li class="nav-link"><a href="/home?name=Unknown">Home</a></li>
+    </ul>
+  </nav>
+</div>
+</header>
+<body>
+<!--<p th:text="Hello, +${name}">
+<p><h3>Hello</h3></p>-->
+<div class = "container">
+  <p th:text="'Welcome '+${guest_name}">
+
+</div>
+
+</body>
+</html>
